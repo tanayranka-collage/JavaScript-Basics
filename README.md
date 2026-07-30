@@ -1,6 +1,6 @@
 # JS - Practicals 
 
-A GitHub Repository for Practicals for the subject of Javascript Basics
+A GitHub Repository for Practicals for the subject of Javascript-Basics
 
 ## Authors
 

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            width: 100vw;
+            height: 100vh;
+            background-color: black;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        #con{
+            margin-top: 5rem;
+            border-radius: 20px;
+            border: 2px solid #ffffffcf;
+            width: fit-content;
+            height: fit-content;
+            background: linear-gradient(180deg, #003bff 0.000%, #004bff 8.333%, #125cff 16.667%, #2b6cff 25.000%, #447bff 33.333%, #5d8bff 41.667%, #7499ff 50.000%, #8aa7ff 58.333%, #9db3ff 66.667%, #adbfff 75.000%, #b9c9ff 83.333%, #c2d2ff 91.667%, #c6d9ff 100.000%);
+            padding: 2rem 4rem;
+        }
+        h1{
+            font-family: "Tangerine", cursive;
+            font-weight: 700;
+            font-size: 50px;
+            text-align: center;
+        }
+        #butt1{
+            margin-top: 2rem;
+            margin-right: 1rem;
+        }
+
+        .custom-button {
+  /* Step 1: Reset default browser styles */
+  background-color: #007bff; /* Primary background color */
+  color: #ffffff;            /* Text color */
+  border: none;              /* Removes default gray border */
+  font-family: inherit;      /* Inherit font from your page */
+  
+  /* Step 2: Sizing and spacing */
+  font-size: 16px;
+  padding: 12px 24px;        /* Generous click target (Top/Bottom Left/Right) */
+  border-radius: 6px;        /* Slightly rounded corners */
+  
+  /* Step 3: Interaction settings */
+  cursor: pointer;           /* Changes cursor to a hand tool on hover */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  
+  /* Step 4: Smooth animations */
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+/* Hover state: When a mouse rolls over the button */
+.custom-button:hover {
+  background-color: #0056b3; /* Darker shade of the primary color */
+}
+
+/* Focus state: Critical for keyboard navigation/accessibility (Tab key) */
+.custom-button:focus-visible {
+  outline: 3px solid #9fcdff; /* Accessible ring around the button */
+  outline-offset: 2px;
+}
+
+/* Active state: The exact moment the button is being clicked down */
+.custom-button:active {
+  transform: scale(0.98);    /* Subtle "pressed" shrinking effect */
+}
+
+
+    </style>
+</head>
+<body>
+    <div id="con">
+        <h1>hi guys</h1>
+        <button class="custom-button" id="butt1" onclick="setCookie();">Set Cookie</button>
+        <button class="custom-button" id="butt2" onclick="removeCookie();">Clear Cookie</button>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
